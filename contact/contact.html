@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/33ed48fd30.js"></script>
+    <!-- bootstrap -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+</head>
+
+<!-- <body style="background-color: rgba(250, 215, 236, 0.799);"> -->
+
+<header>
+
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+
+    <a href="../home/index.html" class="logo">RS GIFTS</a>
+
+    <nav class="navbar">
+        <a href="../home/index.html">home</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">Category
+                <!-- <i class="fa fa-caret-down"></i> -->
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="../catelog/Customize Frames.html">Frame</a>
+                <a href="../catelog/wooden items.html">Wood art</a>
+                <a href="../catelog/wall clock.html">Wall clock</a>
+                <a href="../catelog/jewellery.html">jewellary</a>
+                <a href="../catelog/Gents watch.html">Gents Watch</a>
+                <a href="../catelog/Ladies watch.html">Ladies watch</a>
+                <a href="../catelog/lights.html">lights</a>
+
+            </div>
+        </div>
+        <a href="../contact/contact.html">contact</a>
+        <a href="../about us/about.html">about</a>
+        <!-- <a href="#review">review</a> -->
+
+    </nav>
+
+    <div class="icons">
+        <!-- <a href="#" class="fas fa-heart"></a> -->
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="../login2/log.html" class="fas fa-sign-in-alt"></a>
+        <a href="../register/register.html" class="fas fa-user"></a>
+        <!-- <a href="#about">Register</a> -->
+        <!-- <a class="far fa-sign-in-alt"></a> -->
+    </div>
+
+</header>
+
+
+
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <!-- <h1 class="heading"> <span> contact </span> us </h1> -->
+
+    <div class="row">
+
+        <form action="">
+            <input type="text" placeholder="name" class="box" required>
+            <input type="email" placeholder="email" class="box" required>
+            <input type="number" placeholder="number" class="box" required>
+            <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
+            <a data-aos="fade-up" data-aos-delay="600" href="#" class="btn">send messege</a>
+        </form>
+
+        <div class="image">
+            <img src="IllegalLimitedBettong-max-1mb.gif" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- contact section ends -->
+
+ <!-- footer section starts  -->
+
+ <section class="footer">
+
+    <div class="box-container">
+
+        <div class="box" data-aos="fade-up" data-aos-delay="150">
+            <a href="#" class="logo"> <i class=""></i>RS-GIFT </a>
+            <p>Unique Gifts For Every Occasion</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="300">
+            <h3>quick links</h3>
+            <a href="#home" class="links"> <i class="fas fa-arrow-right"></i> HOME </a>
+            <a href="#category" class="links"> <i class="fas fa-arrow-right"></i> CATEGORY </a>
+            <a href="#about" class="links"> <i class="fas fa-arrow-right"></i> CONTACT</a>
+            <a href="#services" class="links"> <i class="fas fa-arrow-right"></i> ABOUT </a>
+            <!-- <a href="#gallery" class="links"> <i class="fas fa-arrow-right"></i> gallery </a>
+        <a href="#blogs" class="links"> <i class="fas fa-arrow-right"></i> blogs </a> -->
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="450">
+            <h3>contact info</h3>
+            <p> <i class="fas fa-map"></i> KARACHI,PAKISTAN </p>
+            <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
+            <p> <i class="fas fa-envelope"></i> RS-GIFT@GMAIL.COM </p>
+            <p> <i class="fas fa-clock"></i> 7:00am - 10:00pm </p>
+        </div>
+
+        <div class="box" data-aos="fade-up" data-aos-delay="600">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <form action="">
+                <input type="email" name="" placeholder="enter your email" class="email" id="">
+                <input type="submit" value="subscribe" class="btnfour">
+            </form>
+        </div>
+
+    </div>
+
+</section>
+
+<div class="credit">created by <span>RS-GIFTS</span> | all rights reserved!</div>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+</body>
+
+
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script>
+
+    AOS.init({
+        duration: 800,
+        offset: 150,
+    });
+
+</script>
+
+
+
+<!-- javascript of header starts-->
+
+
+<script>
+    /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown menu if the user clicks outside of it
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+<!-- javascript of header ends-->
+
+
+
+
+
+</body>
+
+</html>

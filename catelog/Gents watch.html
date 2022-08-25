@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>GENTS WATCH</title>
+
+    <script src="https://kit.fontawesome.com/33ed48fd30.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="../home/index.html" class="logo">RS GIFTS</a>
+
+        <nav class="navbar">
+            <a href="../home/index.html">home</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">Category
+                    <!-- <i class="fa fa-caret-down"></i> -->
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="../catelog/Customize Frames.html">Frame</a>
+                    <a href="../catelog/wooden items.html">Wood art</a>
+                    <a href="../catelog/wall clock.html">Wall clock</a>
+                    <a href="../catelog/jewellery.html">jewellary</a>
+                    <a href="../catelog/Gents watch.html">Gents Watch</a>
+                    <a href="../catelog/Ladies watch.html">Ladies watch</a>
+                    <a href="../catelog/lights.html">lights</a>
+
+                </div>
+            </div>
+            <a href="../contact/contact.html">contact</a>
+            <a href="../about us/about.html">about</a>
+            <!-- <a href="#review">review</a> -->
+
+        </nav>
+
+        <div class="icons">
+            <!-- <a href="#" class="fas fa-heart"></a> -->
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <a href="../login2/log.html" class="fas fa-sign-in-alt"></a>
+            <a href="../register/register.html" class="fas fa-user"></a>
+            <!-- <a href="#about">Register</a> -->
+            <!-- <a class="far fa-sign-in-alt"></a> -->
+        </div>
+
+    </header>
+
+
+
+
+
+
+
+
+    <!-- main Container -->
+    <div class="container">
+        <h3 class="title">Gents watches</h3>
+        <div class="product-container">
+
+            <div class="product" data-name="p-1">
+                <img src="./watches/g.jpg" alt="">
+                <h3>Citizen watch</h3>
+                <div class="price">1200.00</div>
+                <a href="#"><button class="btn">Add to cart</button></a> 
+            </div>
+            <div class="product" data-name="p-2">
+                <img src="./watches/g2.jpg" alt="">
+                <h3>Citizen watch</h3>
+                <div class="price">900.00</div>
+                <a href="#"><button class="btn">Add to cart</button></a> 
+            </div>
+            <div class="product" data-name="p-3">
+                <img src="./watches/g3.jpg" alt="">
+                <h3>Rolex watch</h3>
+                <div class="price">3300.00</div>
+                <a href="#"><button class="btn">Add to cart</button></a> 
+            </div>
+            <div class="product" data-name="p-4">
+                <img src="./watches/g4.jpg" alt="">
+                <h3>Citizen watch</h3>
+                <div class="price">900.00</div>
+                <a href="#"><button class="btn">Add to cart</button></a> 
+            </div>
+            <div class="product" data-name="p-5">
+                <img src="./watches/g5.jpg" alt="">
+                <h3>Citizen watch</h3>
+                <div class="price">850.00</div>
+                <a href="#"><button class="btn">Add to cart</button></a> 
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box" data-aos="fade-up" data-aos-delay="150">
+                <a href="#" class="logo"> <i class=""></i>RS-GIFT </a>
+                <p>Unique Gifts For Every Occasion</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-delay="300">
+                <h3>quick links</h3>
+                <a href="#home" class="links"> <i class="fas fa-arrow-right"></i> HOME </a>
+                <a href="#category" class="links"> <i class="fas fa-arrow-right"></i> CATEGORY </a>
+                <a href="#about" class="links"> <i class="fas fa-arrow-right"></i> CONTACT</a>
+                <a href="#services" class="links"> <i class="fas fa-arrow-right"></i> ABOUT </a>
+                <!-- <a href="#gallery" class="links"> <i class="fas fa-arrow-right"></i> gallery </a>
+            <a href="#blogs" class="links"> <i class="fas fa-arrow-right"></i> blogs </a> -->
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-delay="450">
+                <h3>contact info</h3>
+                <p> <i class="fas fa-map"></i> KARACHI,PAKISTAN </p>
+                <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
+                <p> <i class="fas fa-envelope"></i> RS-GIFT@GMAIL.COM </p>
+                <p> <i class="fas fa-clock"></i> 7:00am - 10:00pm </p>
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-delay="600">
+                <h3>newsletter</h3>
+                <p>subscribe for latest updates</p>
+                <form action="">
+                    <input type="email" name="" placeholder="enter your email" class="email" id="">
+                    <input type="submit" value="subscribe" class="btnfour">
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="credit">created by <span>RS-GIFTS</span> | all rights reserved!</div>
+
+    <!-- footer section ends -->
+   
+
+    <!-- javascript of header starts-->
+
+
+    <script>
+        /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- javascript of header ends-->
+
+
+</body>
+
+</html>
